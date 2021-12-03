@@ -1,4 +1,4 @@
-# Cripto Mensagens
+# Cripto Mensagens (em construção)
 
 Esse projeto consiste em um website onde os usuários podem criptografar suas mensagens antes de envia-las para alguém. São dois tipos de criptografia, o cifra de César e o Base64, podendo o usuário escolher entre elas. No caso do cifra de César ser escolhido é possivel escolher um valor de incremento para a mensagem, assim somente você e a pessoa que recebeu poderá descriptografar a mensagem.
 

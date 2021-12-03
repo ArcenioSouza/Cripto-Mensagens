@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="base.css">
+   <link rel="stylesheet" href="style.css">
+   <title>Cripto Mensagens</title>   
+</head>
+<body>
+   <div class="containerTitle">
+      <h1>Cripto Mensagens</h1>
+      <img src="./image-title.png" alt="imagem abstrata no head da pagina">
+   </div>
+   <div class="containerApp">
+      <div class="wrapperApp">
+         <p>Selecione o tipo de criptografia</p>
+         <div class="buttonsTypeCripto">
+            <button ativo>César</button>
+            <button>Base64</button>
+         </div>
+         <p>Digite a mensagem aqui</p>
+         <textarea name="textMessage" id="textMessage" cols="30" rows="5"></textarea>
+         <p>O que deseja fazer?</p>
+         <div class="buttonsCriptografia">
+            <button ativo>Criptografar</button>
+            <button>Descriptografar</button>
+         </div>
+         <p>Visualização da mensagem</p>
+         <textarea name="resultMessage" id="resultMessage" cols="30" rows="5"></textarea>
+         <div class="buttonsShare">
+            <p>Compartilhar:</p>
+            <a href="#"><img src="./logos_whatsapp.png" alt="Logotipo do whatsapp"></a>
+            <a href="#"><img src="./logos_twitter.png" alt="Logotipo do twitter"></a>
+            <a href="#"><img src="./logos_telegram.png" alt="Logotipo do telegram"></a>
+         </div>
+      </div>
+   </div>
+   <script src="./index.js"></script>
+</body>
+</html>
