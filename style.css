@@ -1,4 +1,11 @@
-.containerTitle{
+.container{
+   background-color: var(--black);
+   width: 375px;
+   height: 100vh;
+
+}
+
+header{
    width: 100%;
    height: 35vh;
    display: flex;
@@ -7,19 +14,19 @@
    padding: 10px;
 }
 
-.containerTitle h1{
+header h1{
    font-family: var(--font-primary);
    color: var(--orange);
    font-size: 2rem;
 }
 
-.containerApp{
+main{
    width: 100%;
-   height: 65vh;
+   height: 55vh;
    background-color: var(--orange);
    border-top-left-radius: 40px;
    border-top-right-radius: 40px;
-   padding: 10px;
+   padding: 5px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -29,15 +36,92 @@
 p{
    text-align: center;
    font-family: var(--font-primary);
-   font-size: 1.2rem;
+   font-size: 22px;
+   font-weight: bold;
+   padding: 10px;
 }
 
-.buttonsShare{
+.buttons{
    display: flex;
    justify-content: space-evenly;
+   align-items: center;
+   width: 80%;
 }
 
-.buttonsShare a img{
+.buttons button{
+   padding: 6px 15px;
+   border-radius: 20px;
+   border: 2px solid #000;
+   background-color: var(--black);
+   color: #fff;
+   font-family: var(--font-primary);
+   font-size: 18px;
+}
+
+#modalIncremento{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: #fff;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+#modal{
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: #1a1919ce;
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 25px;
+   font-weight: bold;
+   font-family: var(--font-primary);
+}
+
+#btnModal{
+   margin-top: 10px;
+   padding: 5px 30px;
+}
+
+#incremento{
+   width: 100px;
+   height: 50px;
+   font-size: 25px;
+   text-align: center;
+   border-radius: 10px;
+}
+
+textarea{
+   width: 90%;
+   border-radius: 10px;
+   border: 2px solid var(--black);
+   font-family: var(--font-secondary);
+   padding: 5px;
+   font-weight: bold;
+}
+
+button[ativo]{
+   border: 2px solid #fff;
+}
+
+footer{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: var(--orange);
+   width: 100%;
+   height: 10vh;
+}
+
+footer a img{
    width: 28px;
    height: 28px;
 }
