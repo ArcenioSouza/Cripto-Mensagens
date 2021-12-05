@@ -12,7 +12,9 @@ let btnDescripto = document.getElementById('descripto')
 
 let incremento = document.getElementById('incremento')
 
-var valorIncremento = 0
+var valueIncrement = 0
+
+var alphabet = "abcdefghijklmnopqrstuvwxyzàèìòùáéíóúâêîôãõabcdefghijklmnopqrstuvwxyzàèìòùáéíóúâêîôãõ"
 
 
 btnCesar.addEventListener('click', () => {
@@ -40,3 +42,21 @@ btnModal.addEventListener('click', () => {
    modal.style.display = 'none'
    valorIncremento = parseInt(incremento.value)
 })
+
+function codificarCesar() {
+   var textMessage = document.querySelector("#textMessage").value;
+   var textLowerCase = textMessage.toLowerCase();
+   var textCripto = "";
+ 
+   for (var i = 0; i < textLowerCase.length; i++) {
+     for (var j = 0; j < alphabet.length; j++)
+       if (textLowerCase[i] == alphabet[j]) {
+         textCripto += alphabet[j + valueIncrement];
+         break;
+       } else if (textLowerCase[i] == " ") {
+         textCripto += " ";
+         break;
+       }
+   }
+   return textCripto;
+ }
