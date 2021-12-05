@@ -1,13 +1,13 @@
 .container{
    background-color: var(--black);
    width: 375px;
-   height: 100vh;
+   height: 667px;
 
 }
 
 header{
    width: 100%;
-   height: 35vh;
+   height: 35%;
    display: flex;
    align-items: center;
    flex-direction: column;
@@ -17,12 +17,12 @@ header{
 header h1{
    font-family: var(--font-primary);
    color: var(--orange);
-   font-size: 2rem;
+   font-size: 40px;
 }
 
 main{
    width: 100%;
-   height: 58vh;
+   height: 58%;
    background-color: var(--orange);
    border-top-left-radius: 40px;
    border-top-right-radius: 40px;
@@ -122,7 +122,7 @@ footer{
    align-items: center;
    background-color: var(--orange);
    width: 100%;
-   height: 7vh;
+   height: 7%;
 }
 
 footer a img{
