@@ -62,6 +62,10 @@ p{
    font-size: 18px;
 }
 
+.buttons button:hover{
+   cursor: pointer;
+}
+
 #modalIncremento{
    display: flex;
    flex-direction: column;
