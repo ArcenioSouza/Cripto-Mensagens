@@ -19,7 +19,7 @@ let btnResult = document.getElementById("result");
 let valueIncrement = 0;
 
 let alphabet =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzàèìòùáéíóúâêîôãõABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzàèìòùáéíóúâêîôãõ";
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzàèìòùáéíóúâêîôãõ?!.,/;:()@-_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzàèìòùáéíóúâêîôãõ?!.,/;:()@-_";
 
 btnCesar.addEventListener("click", () => {
   modal.style.display = "flex";
@@ -81,15 +81,14 @@ function decodificarBase() {
 
 function codificarCesar() {
   var textMessage = document.querySelector("#textMessage").value;
-  var textLowerCase = textMessage.toLowerCase();
   var textCripto = "";
 
-  for (var i = 0; i < textLowerCase.length; i++) {
+  for (var i = 0; i < textMessage.length; i++) {
     for (var j = 0; j < alphabet.length; j++)
-      if (textLowerCase[i] == alphabet[j]) {
+      if (textMessage[i] == alphabet[j]) {
         textCripto += alphabet[j + valueIncrement];
         break;
-      } else if (textLowerCase[i] == " ") {
+      } else if (textMessage[i] == " ") {
         textCripto += " ";
         break;
       }
@@ -99,15 +98,14 @@ function codificarCesar() {
 
 function decodificarCesar() {
   var textMessage = document.querySelector("#textMessage").value;
-  var textLowerCase = textMessage.toLowerCase();
   var textCripto = "";
 
-  for (var i = 0; i < textLowerCase.length; i++) {
+  for (var i = 0; i < textMessage.length; i++) {
     for (var j = alphabet.length; j > 0; j--) {
-      if (textLowerCase[i] == alphabet[j]) {
+      if (textMessage[i] == alphabet[j]) {
         textCripto += alphabet[j - valueIncrement];
         break;
-      } else if (textLowerCase[i] == " ") {
+      } else if (textMessage[i] == " ") {
         textCripto += " ";
         break;
       }
