@@ -11,11 +11,14 @@
   <body>
      <div class="container">
          <header>
-            <h1>Cripto Mensagens</h1>
+            <div class="whapperTitle">
+               <h1>Cripto Mensagens</h1>
+               <p id="paragraphTitle">Compartilhe suas mensagens de um <br>jeito que só vocês entendam!</p>
+            </div>            
             <img src="./image-title.png" alt="imagem abstrata no head da pagina" />
          </header>
          <main>
-            <p>Selecione o tipo de criptografia</p>
+            <p id="tipoCripto">Selecione o tipo de criptografia</p>
             <div class="buttons">
                <button id="cesar">César</button>
                <button ativo id="base64">Base64</button>
@@ -28,19 +31,19 @@
                   
                </div>
             </div>
-            <p>Digite a mensagem aqui</p>
+            <p id="digiteMensagem">Digite a mensagem aqui</p>
             <textarea
                name="textMessage"
                id="textMessage"
                cols="30"
                rows="5"
             ></textarea>
-            <p>O que deseja fazer?</p>
+            <p id="qDeseja">O que deseja fazer?</p>
             <div class="buttons">
                <button id="cripto" ativo>Criptografar</button>
                <button id="descripto">Descriptografar</button>
             </div>
-            <p>Visualização da mensagem</p>
+            <p id="visualizaMensagem">Visualização da mensagem</p>
             <textarea
                name="resultMessage"
                id="resultMessage"
