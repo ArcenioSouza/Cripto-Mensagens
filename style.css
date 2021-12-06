@@ -148,8 +148,23 @@ footer a img {
 
 @media (min-width: 1000px) {
   .container {
-    background-color: var(--black);
     width: 600px;
     height: 100vh;
+  }
+
+  textarea {
+    font-size: 20px;
+  }
+
+  header img{
+    width: 250px;
+  }
+
+  p{
+    font-size: 28px;
+  }
+
+  .buttons button{
+    font-size: 22px;
   }
 }
