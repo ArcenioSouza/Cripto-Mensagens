@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Cripto Mensagens</title>
-  </head>
-  <body>
-     <div class="container">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="base.css" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Cripto Mensagens</title>
+   </head>
+   <body>
+      <div class="container">
          <header>
             <div class="whapperTitle">
                <h1>Cripto Mensagens</h1>
-               <p id="paragraphTitle">Compartilhe suas mensagens de um <br>jeito que só vocês entendam!</p>
-            </div>            
-            <img src="./image-title.png" alt="imagem abstrata no head da pagina" />
+               <p id="paragraphTitle">
+                  Compartilhe suas mensagens de um <br />jeito que só vocês
+                  entendam!
+               </p>
+            </div>
+            <img
+               src="./image-title.png"
+               alt="imagem abstrata no head da pagina"
+            />
          </header>
          <main>
-            <p id="tipoCripto">Selecione o tipo de criptografia</p>
-            <div class="buttons">
-               <button id="cesar">César</button>
-               <button ativo id="base64">Base64</button>
-               <div id="modal">
-                  <div id="modalIncremento">
-                     <label for="">Digite o número da chave de incremento<br>Valor entre 1 e 25</label>
-                     <input type="number" id="incremento" min="1" max="25">
-                     <button id="btnModal">OK</button>
+            <div class="wrapperTypeCripto">
+               <p id="tipoCripto">Selecione o tipo de criptografia</p>
+               <div class="buttons">
+                  <button id="cesar" class="btnType">César</button>
+                  <button ativo id="base64" class="btnType">Base64</button>
+                  <div id="modal">
+                     <div id="modalIncremento">
+                        <label for=""
+                           >Digite o número da chave de incremento<br />Valor
+                           entre 1 e 25</label
+                        >
+                        <input type="number" id="incremento" min="1" max="25" />
+                        <button id="btnModal">OK</button>
+                     </div>
                   </div>
-                  
+               </div>
+               <p id="qDeseja">O que deseja fazer?</p>
+               <div class="divBtnCripto">
+                  <button id="cripto" class="btnCripto" ativo>Criptografar</button>
+                  <button id="descripto" class="btnCripto">Descriptografar</button>
                </div>
             </div>
-            <p id="digiteMensagem">Digite a mensagem aqui</p>
-            <textarea
-               name="textMessage"
-               id="textMessage"
-               cols="30"
-               rows="5"
-            ></textarea>
-            <p id="qDeseja">O que deseja fazer?</p>
-            <div class="buttons">
-               <button id="cripto" ativo>Criptografar</button>
-               <button id="descripto">Descriptografar</button>
+            <div class="wrapperConvertMessage">
+               <p id="digiteMensagem">Digite a mensagem aqui</p>
+               <textarea
+                  name="textMessage"
+                  id="textMessage"
+                  cols="30"
+                  rows="5"
+               ></textarea>
+               <p id="visualizaMensagem">Visualização da mensagem</p>
+               <textarea
+                  name="resultMessage"
+                  id="resultMessage"
+                  cols="30"
+                  rows="5"
+               ></textarea
+               ><br />
+               <div class="divBtnResult">
+                  <button id="result">Criptografar com Base64</button>
+               </div>
+               <br />
             </div>
-            <p id="visualizaMensagem">Visualização da mensagem</p>
-            <textarea
-               name="resultMessage"
-               id="resultMessage"
-               cols="30"
-               rows="5"
-            ></textarea><br>
-            <div class="buttons">
-               <button id="result">Criptografar com Base64</button>
-            </div><br>
             
          </main>
          <footer>
             <p>Compartilhar:</p>
             <a href="#"
-            ><img src="./logos_whatsapp.png" alt="Logotipo do whatsapp"
+               ><img src="./logos_whatsapp.png" alt="Logotipo do whatsapp"
             /></a>
             <a href="#"
-            ><img src="./logos_twitter.png" alt="Logotipo do twitter"
+               ><img src="./logos_twitter.png" alt="Logotipo do twitter"
             /></a>
             <a href="#"
-            ><img src="./logos_telegram.png" alt="Logotipo do telegram"
+               ><img src="./logos_telegram.png" alt="Logotipo do telegram"
             /></a>
          </footer>
       </div>
-    <script src="./index.js"></script>
-  </body>
+      <script src="./index.js"></script>
+   </body>
 </html>
