@@ -1,0 +1,443 @@
+.container {
+  background-color: var(--black);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.wrapperTitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#paragraphTitle {
+  color: #fff;
+  font-size: 45px;
+}
+
+header h1 {
+  font-family: var(--font-primary);
+  color: var(--orange);
+  font-size: 70px;
+  text-align: center;
+}
+
+header img{
+  width: 350px;
+}
+
+main {
+  width: 95%;
+  height: 50%;
+  margin: auto 10px;
+  background-color: var(--orange);
+  border-radius: 20px;
+  border: 2px solid #fff;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapperTypeCripto{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wrapperConvertMessage{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#result:active {
+  border: 2px solid #fff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.divBtnResult{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divBtnResult button{
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  background-color: var(--black);
+  color: #fff;
+  font-family: var(--font-primary);
+  font-size: 22px;
+}
+
+.btnType {
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  background-color: var(--black);
+  color: #fff;
+  font-family: var(--font-primary);
+  font-size: 26px;
+}
+
+.btnCripto {
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  background-color: var(--black);
+  color: #fff;
+  font-family: var(--font-primary);
+  font-size: 26px;
+}
+
+.divBtnCripto{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+}
+
+#modalIncremento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1a1919ce;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: var(--font-primary);
+}
+
+#btnModal {
+  margin-top: 10px;
+  padding: 5px 30px;
+  background-color: var(--black);
+  color: #fff;
+  font-family: var(--font-primary);
+  font-size: 22px;
+  border-radius: 20px;
+}
+
+#incremento {
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 90%;
+  border-radius: 10px;
+  border: 2px solid var(--black);
+  font-family: var(--font-secondary);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+button[ativo] {
+  border: 2px solid #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  width: 100%;
+  height: 7%;
+  color: #fff;
+}
+
+footer a img {
+  width: 28px;
+  height: 28px;
+  margin: 0 10px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    background-color: var(--black);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  .wrapperTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #paragraphTitle {
+    color: #fff;
+    font-size: 45px;
+    display: none;
+  }
+  
+  header h1 {
+    font-family: var(--font-primary);
+    color: var(--orange);
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  header img{
+    width: 180px;
+  }
+  
+  main {
+    width: 100%;
+    height: 65%;
+    background-color: var(--orange);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapperTypeCripto{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .wrapperConvertMessage{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  p {
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  #result:active {
+    border: 2px solid #fff;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .divBtnResult{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .divBtnResult button{
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    background-color: var(--black);
+    color: #fff;
+    font-family: var(--font-primary);
+    font-size: 18px;
+  }
+  
+  .btnType {
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    background-color: var(--black);
+    color: #fff;
+    font-family: var(--font-primary);
+    font-size: 18px;
+  }
+  
+  .btnCripto {
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    background-color: var(--black);
+    color: #fff;
+    font-family: var(--font-primary);
+    font-size: 18px;
+  }
+  
+  .divBtnCripto{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .buttons button:hover {
+    cursor: pointer;
+  }
+  
+  #modalIncremento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1a1919ce;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: var(--font-primary);
+  }
+  
+  #btnModal {
+    margin-top: 10px;
+    padding: 5px 30px;
+    background-color: var(--black);
+    color: #fff;
+    font-family: var(--font-primary);
+    font-size: 22px;
+    border-radius: 20px;
+  }
+  
+  #incremento {
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  textarea {
+    width: 90%;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid var(--black);
+    font-family: var(--font-secondary);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  button[ativo] {
+    border: 2px solid #fff;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    width: 100%;
+    height: 7%;
+    color: #000;
+  }
+  
+  footer a img {
+    width: 28px;
+    height: 28px;
+    margin: 0 10px;
+  }
+}

@@ -6,15 +6,15 @@ Esse projeto consiste em um website onde os usuários podem criptografar suas me
 
 # Objetivos
 
-[ok] - Concluir atividade do curso da Resilia;
+- [x] Concluir atividade do curso da Resilia;
 
-[ok] - Implementar um sistema de criptografia;
+- [x] Implementar um sistema de criptografia;
 
-[ok] - Praticar o uso do Figma para desenvolvimento do design do projeto;
+- [x] Praticar o uso do Figma para desenvolvimento do design do projeto;
 
-[ok] - Praticar o uso do Javascript;
+- [x] Praticar o uso do Javascript;
 
-[ok] - Praticar o uso de HTML e CSS;
+- [x] Praticar o uso de HTML e CSS;
 
 # Créditos
 
